@@ -19,9 +19,10 @@ function useHash() {
 function Shell() {
   const hash = useHash()
   const { exportJson, importJson, persist, saveState, savedAt, ready } = useStore()
-  const itemMatch = hash.match(/^#\/item\/(.+)$/)
+  const itemMatch = hash.match(/^#\/item\/([^/?#]+)$/)
   const snapMatch = hash.match(/^#\/snaps(?:\/(.+))?$/)
-  const page = itemMatch ? 'item' : snapMatch ? 'snaps' : hash.startsWith('#/wall') ? 'wall' : 'home'
+  const itemList = /^#\/item\/?$/.test(hash)
+  const page = itemMatch ? 'item' : snapMatch ? 'snaps' : hash.startsWith('#/wall') || itemList ? 'wall' : 'home'
 
   function onImport(e: ChangeEvent<HTMLInputElement>) {
     const file = e.target.files?.[0]
@@ -40,7 +41,7 @@ function Shell() {
             <a href="#/" className={page === 'home' ? 'active' : ''}>
               总览
             </a>
-            <a href="#/wall" className={page === 'wall' || page === 'item' ? 'active' : ''}>
+            <a href="#/item" className={page === 'wall' || page === 'item' ? 'active' : ''}>
               事项
             </a>
             <a href="#/snaps" className={page === 'snaps' ? 'active' : ''}>
@@ -79,7 +80,7 @@ function Shell() {
           {page === 'home' && <Overview />}
           {page === 'wall' && <Wall />}
           {page === 'snaps' && <Snapshots date={snapMatch?.[1]} />}
-          {page === 'item' && itemMatch && <ItemDetail id={itemMatch[1]} />}
+          {page === 'item' && itemMatch && <ItemDetail id={decodeURIComponent(itemMatch[1])} />}
         </>
       )}
     </div>

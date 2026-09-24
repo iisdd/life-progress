@@ -27,7 +27,7 @@ export function ItemDetail({ id }: { id: string }) {
     return (
       <section className="card">
         <p>找不到这条事项。</p>
-        <a className="back" href="#/wall">
+        <a className="back" href="#/item">
           ← 返回事项
         </a>
       </section>
@@ -42,7 +42,7 @@ export function ItemDetail({ id }: { id: string }) {
     <div className="stack">
       <section className="card hero">
         <div className="hero-main">
-          <a className="back" href="#/wall">
+          <a className="back" href="#/item">
             ← 返回事项
           </a>
           <input
@@ -182,7 +182,7 @@ export function ItemDetail({ id }: { id: string }) {
             onClick={() => {
               if (window.confirm(`删除事项「${item.title}」？步骤和日志也会一起删掉。`)) {
                 deleteItem(item.id)
-                window.location.hash = '#/wall'
+                window.location.hash = '#/item'
               }
             }}
           >

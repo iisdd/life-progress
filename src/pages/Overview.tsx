@@ -40,7 +40,7 @@ export function Overview() {
               ))
             ) : (
               <p className="empty">
-                还没有正在推进的事项。<a href="#/wall">去添加</a>
+                还没有正在推进的事项。<a href="#/item">去添加</a>
               </p>
             )}
           </div>
