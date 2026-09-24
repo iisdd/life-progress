@@ -1,0 +1,176 @@
+{
+  "items": [
+    {
+      "id": "i-home",
+      "title": "把阳台收拾出来",
+      "category": "life",
+      "status": "doing",
+      "dueDate": "2026-10-08",
+      "note": "只做这一块，做完就停。\n\n# 范围\n- 清掉纸箱\n- 留出能站人的空地",
+      "manualProgress": null,
+      "archived": false,
+      "createdAt": "2026-09-04"
+    },
+    {
+      "id": "i-health",
+      "title": "这周动三次就行",
+      "category": "health",
+      "status": "doing",
+      "dueDate": "2026-10-15",
+      "note": "量可以小。连续比强度重要。",
+      "manualProgress": null,
+      "archived": false,
+      "createdAt": "2026-09-12"
+    },
+    {
+      "id": "i-money",
+      "title": "看清这个月开销",
+      "category": "money",
+      "status": "doing",
+      "dueDate": "2026-10-04",
+      "note": "列出必花项。不在这里记具体金额。",
+      "manualProgress": null,
+      "archived": false,
+      "createdAt": "2026-09-16"
+    },
+    {
+      "id": "i-read",
+      "title": "睡前读二十页",
+      "category": "study",
+      "status": "planned",
+      "dueDate": "2026-10-24",
+      "note": "没有进度表。读了就算。",
+      "manualProgress": 10,
+      "archived": false,
+      "createdAt": "2026-09-20"
+    },
+    {
+      "id": "i-tool",
+      "title": "这个进度板能自己用",
+      "category": "hobby",
+      "status": "doing",
+      "dueDate": "2026-10-01",
+      "note": "给自己看图。能改、刷新还在、能导出就够。",
+      "manualProgress": null,
+      "archived": false,
+      "createdAt": "2026-09-23"
+    },
+    {
+      "id": "i-weekend",
+      "title": "周末出门清单",
+      "category": "hobby",
+      "status": "paused",
+      "dueDate": null,
+      "note": "先挂着。想起来再勾。",
+      "manualProgress": 20,
+      "archived": false,
+      "createdAt": "2026-09-09"
+    }
+  ],
+  "steps": [
+    {
+      "id": "s1",
+      "itemId": "i-home",
+      "title": "清掉纸箱和袋子",
+      "status": "done",
+      "startDate": "2026-09-14",
+      "dueDate": "2026-09-22",
+      "order": 0,
+      "checks": []
+    },
+    {
+      "id": "s2",
+      "itemId": "i-home",
+      "title": "阳台能站人",
+      "status": "doing",
+      "startDate": "2026-09-22",
+      "dueDate": "2026-10-01",
+      "order": 1,
+      "checks": [
+        { "id": "c1", "text": "挪开旧椅子", "done": true, "indent": 0 },
+        { "id": "c2", "text": "擦一遍地面", "done": false, "indent": 0 }
+      ]
+    },
+    {
+      "id": "s3",
+      "itemId": "i-home",
+      "title": "放一盆好养的植物",
+      "status": "todo",
+      "startDate": "2026-09-29",
+      "dueDate": "2026-10-08",
+      "order": 2,
+      "checks": []
+    },
+    {
+      "id": "s4",
+      "itemId": "i-health",
+      "title": "走路或拉伸，不另开计划",
+      "status": "doing",
+      "startDate": "2026-09-17",
+      "dueDate": "2026-10-15",
+      "order": 0,
+      "checks": [
+        { "id": "c3", "text": "周一", "done": true, "indent": 0 },
+        { "id": "c4", "text": "周三", "done": false, "indent": 0 },
+        { "id": "c5", "text": "周六", "done": false, "indent": 0 }
+      ]
+    },
+    {
+      "id": "s5",
+      "itemId": "i-money",
+      "title": "必花项写一页",
+      "status": "done",
+      "startDate": "2026-09-18",
+      "dueDate": "2026-09-23",
+      "order": 0,
+      "checks": []
+    },
+    {
+      "id": "s6",
+      "itemId": "i-money",
+      "title": "这周不再新开订阅",
+      "status": "todo",
+      "startDate": "2026-09-24",
+      "dueDate": "2026-10-04",
+      "order": 1,
+      "checks": []
+    },
+    {
+      "id": "s7",
+      "itemId": "i-tool",
+      "title": "网页能改、刷新还在",
+      "status": "done",
+      "startDate": "2026-09-23",
+      "dueDate": "2026-09-24",
+      "order": 0,
+      "checks": []
+    },
+    {
+      "id": "s8",
+      "itemId": "i-tool",
+      "title": "能导出一份备份",
+      "status": "doing",
+      "startDate": "2026-09-24",
+      "dueDate": "2026-10-01",
+      "order": 1,
+      "checks": []
+    },
+    {
+      "id": "s9",
+      "itemId": "i-weekend",
+      "title": "天气好再出门",
+      "status": "todo",
+      "startDate": null,
+      "dueDate": null,
+      "order": 0,
+      "checks": []
+    }
+  ],
+  "logs": [
+    { "id": "l1", "itemId": "i-home", "date": "2026-09-16", "text": "纸箱清掉一半。先不停扩范围。" },
+    { "id": "l2", "itemId": "i-health", "date": "2026-09-21", "text": "- 走了半小时\n- 没有加别的任务" },
+    { "id": "l3", "itemId": "i-money", "date": "2026-09-22", "text": "必花项写完。少盯就好。" },
+    { "id": "l4", "itemId": "i-tool", "date": "2026-09-23", "text": "进度板给自己看图用。" },
+    { "id": "l5", "itemId": "i-home", "date": "2026-09-24", "text": "今天只动阳台里的一件实物。" }
+  ]
+}
